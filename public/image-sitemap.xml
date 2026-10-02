@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://medinaplumbingsupply.com/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Hero Plumbing Fittings & Valves -->
+    <image:image>
+      <image:loc>https://medinaplumbingsupply.com/assets/hero_plumbing_fittings_1790968351304.jpg</image:loc>
+      <image:title>Plumbing Fittings, Brass Valves and Pipe Supplies in Hialeah</image:title>
+      <image:caption>Commercial and residential brass fittings, full-port gate valves, and precision plumbing supplies at Medina &amp; Son Plumbing Supply in Hialeah, FL.</image:caption>
+      <image:geo_location>Hialeah, Florida, USA</image:geo_location>
+    </image:image>
+
+    <!-- Supply Store Counter Interior -->
+    <image:image>
+      <image:loc>https://medinaplumbingsupply.com/assets/counter_supply_interior_1790968364688.jpg</image:loc>
+      <image:title>Traditional Plumbing Supply Counter and Stocked Shelves</image:title>
+      <image:caption>Organized warehouse shelves with PVC Schedule 40, copper tubing, DWV drainage, and commercial parts at 75 W 4th St, Hialeah.</image:caption>
+      <image:geo_location>Hialeah, Florida, USA</image:geo_location>
+    </image:image>
+
+    <!-- Hard-to-Find Brass Hardware & Valves -->
+    <image:image>
+      <image:loc>https://medinaplumbingsupply.com/assets/hard_to_find_brass_valves_1790968378613.jpg</image:loc>
+      <image:title>Hard-to-Find Brass Valves and Specialty Shower Stems</image:title>
+      <image:caption>Specialty replacement valves, vintage cartridge stems, and special order fittings for older South Florida and Hialeah homes.</image:caption>
+      <image:geo_location>Hialeah, Florida, USA</image:geo_location>
+    </image:image>
+
+    <!-- Archival Plumbing Record -->
+    <image:image>
+      <image:loc>https://medinaplumbingsupply.com/assets/archival_plumbing_shelves_1790968390051.jpg</image:loc>
+      <image:title>Medina &amp; Son Plumbing Supply Historical Inventory Record</image:title>
+      <image:caption>Established in 1976: Serving Miami-Dade plumbing contractors, trade professionals, and local homeowners for over 50 years.</image:caption>
+      <image:geo_location>Hialeah, Florida, USA</image:geo_location>
+    </image:image>
+
+    <!-- Storefront and Counter Service -->
+    <image:image>
+      <image:loc>https://medinaplumbingsupply.com/assets/visit_counter_wide_1790968400403.jpg</image:loc>
+      <image:title>Medina &amp; Son Plumbing Supply Counter and Service Area</image:title>
+      <image:caption>Walk-in plumbing counter and store located at 75 W 4th St, Hialeah, FL 33010 with convenient parking for work trucks.</image:caption>
+      <image:geo_location>Hialeah, Florida, USA</image:geo_location>
+    </image:image>
+  </url>
+</urlset>

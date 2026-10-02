@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-canvas: #FBF9F5;
+  --color-ink: #000000;
+  --color-charcoal: #585858;
+  --color-surface-secondary: #F0EDE7;
+  --color-surface-muted: #E5E1DA;
+  --color-dark: #171715;
+  --color-accent: #A79580;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FBF9F5;
+    color: #585858;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: #171715;
+    color: #FBF9F5;
+  }
+}
+
+/* Eliras style button system with precision motion hover effects */
+.btn-eliras {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 1.5rem;
+  background-color: #131313;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-eliras .btn-text {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.btn-eliras .btn-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.btn-eliras:hover {
+  background-color: #242422;
+  border-color: #F0EDE7;
+}
+
+.btn-eliras:hover .btn-text {
+  transform: translateX(-3px);
+}
+
+.btn-eliras:hover .btn-icon {
+  transform: translateX(3px);
+}
+
+.btn-eliras:active {
+  transform: scale(0.99);
+}
+
+.btn-eliras-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  min-height: 48px;
+  padding: 0 1.5rem;
+  background-color: transparent;
+  color: #000000;
+  border: 1.5px solid #171715;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-eliras-secondary .btn-text {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.btn-eliras-secondary .btn-icon {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.btn-eliras-secondary:hover {
+  background-color: #F0EDE7;
+  border-color: #000000;
+}
+
+.btn-eliras-secondary:hover .btn-text {
+  transform: translateX(-3px);
+}
+
+.btn-eliras-secondary:hover .btn-icon {
+  transform: translateX(3px);
+}
+
+.btn-eliras-secondary:active {
+  transform: scale(0.99);
+}
+
+/* Editorial subtle link motion hover */
+.editorial-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              letter-spacing 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-link:hover::after {
+  width: 100%;
+}
+
+.editorial-link:hover {
+  letter-spacing: 0.16em;
+}
+
+/* Reduced motion adjustments */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
